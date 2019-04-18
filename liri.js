@@ -72,6 +72,13 @@ inquirer
         });
     }
 
+    //if answer is do what
+    if (answers.command == "do-what-it-says") {
+          userSearch = "I Want it That Way"
+          runRandom();
+        };
+    
+
   })
 
 //function to run Spotify search
@@ -140,4 +147,14 @@ function runMovie(){
       })
     
   })
+}
+
+//functions to read file
+function runRandom() {
+  fs.readFile("random.txt", "utf8", function (error, data) {
+      if (error) {
+          console.log(error);
+      }
+          runSpotify();
+  });
 }
