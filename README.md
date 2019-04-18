@@ -17,3 +17,6 @@ The Liri App uses the Spotify, Bands in Town, and OMDB APIs to allow users to se
 - axios
 - moment
 - inquirer
+
+##Demo video
+https://youtu.be/1-m6lXCW6zo
